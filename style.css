@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #F8C8DC, #FFF5F7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor tipo app */
+.app {
+    width: 360px;
+    height: 640px;
+    background: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+/* Pantallas */
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+}
+
+.screen.active {
+    transform: translateX(0);
+}
+
+.screen.exit {
+    transform: translateX(-100%);
+}
+
+/* Textos */
+h1, h2 {
+    color: #7B1E3A;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    color: #1F3D2B;
+    margin-bottom: 15px;
+}
+
+.texto {
+    color: #1F3D2B;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+/* Botones */
+button {
+    background: #7B1E3A;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a142a;
+    transform: scale(1.05);
+}
+
+/* Imágenes */
+.contenedor-img {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.contenedor-img img {
+    width: 50%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.contenedor-img img:hover {
+    transform: scale(1.05);
+}
