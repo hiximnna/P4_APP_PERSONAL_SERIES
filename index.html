@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BL Series GMMTV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<!-- PANTALLA 1 -->
+<section id="screen1" class="screen active">
+    <h1>BL Series GMMTV 💗</h1>
+    <p class="nombre">By: Ximena</p>
+
+    <div class="contenedor-img">
+        <img src="img/main1.jpg">
+        <img src="img/main2.jpg">
+    </div>
+
+    <button onclick="cambiarPantalla('screen2')">Series populares</button>
+    <button onclick="cambiarPantalla('screen3')">Actores</button>
+</section>
+
+<!-- PANTALLA 2 -->
+<section id="screen2" class="screen">
+    <h2>Series populares 💕</h2>
+
+    <div class="contenedor-img">
+        <img src="img/serie1.jpg">
+        <img src="img/serie2.jpg">
+    </div>
+
+    <p class="texto">
+        GMMTV ha producido muchas series BL populares como 2gether y Bad Buddy,
+        destacando por sus historias románticas y personajes icónicos.
+    </p>
+
+    <button onclick="cambiarPantalla('screen1')">Regresar</button>
+</section>
+
+<!-- PANTALLA 3 -->
+<section id="screen3" class="screen">
+    <h2>Actores 💖</h2>
+
+    <div class="contenedor-img">
+        <img src="img/actor1.jpg">
+        <img src="img/actor2.jpg">
+    </div>
+
+    <p class="texto">
+        Actores como First y Khaotung han ganado popularidad mundial gracias a su
+        química y talento dentro de las series BL de GMMTV, iniciando con su 
+        protagónico Eclipse, siguiendo con Only Friends en donde fueron pareja secundaria.
+    </p>
+
+    <button onclick="cambiarPantalla('screen1')">Regresar</button>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
